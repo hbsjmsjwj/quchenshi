@@ -1,0 +1,43 @@
+ul,li{
+   
+    list-style: none;
+}
+*{
+     margin: 0;
+    padding: 0;
+}
+.rowimgs{
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background: rgb(240,240,240);
+
+}
+.rowimgs>li{
+    background: white;
+    border-radius: 5px;
+}
+.rowimgs>li>img{
+    
+    border-radius: 5px;
+}
+.threeimg{
+    width: 100%;
+    height: 110px;
+}
+.gifkuanian{
+    width: 100%;
+    height: auto;
+}
+.imgsgroup{
+    width: 100%;
+    height: auto;
+}
+.ellipsis{
+    width: 100%;
+    height: 35.2px;
+    overflow: hidden;
+}

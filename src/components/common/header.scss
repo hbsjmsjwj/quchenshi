@@ -1,0 +1,67 @@
+
+.qcs-header{
+    position: fixed;top:0;left:0; height:80px;width:100%;background: white;
+    .qcs-search{
+        height:44px;line-height:44px; border-bottom: 1px solid #ccc;width:100%;
+        .qcs-user{font-size: 20px; margin-left:0.4rem;}
+        .qcs-shopping{font-size: 20px; margin-left:0.4rem;}
+        .sousuo{width: 100%;height: 30px;outline: none;border: 1px solid black;border-radius: 5px;}
+    }
+    
+    .qcs-menu{
+        width:100%;height:36px; line-height: 36px;background: white;
+        ul{display: flex; flex-wrap: nowrap;justify-content: space-around;
+            li{
+                height:36px; line-height: 36px;
+                a{color:#000; text-decoration: none; font-size: 0.4rem; display: inline-block;}
+                .active{color:pink; border-bottom:3px solid pink;}
+                
+            }
+        }
+        
+    
+} 
+}
+
+
+
+
+
+.ant-drawer-content-wrapper{
+    width: 100% !important;
+    .in{
+        height: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        align-items: center;
+        
+        div{
+            width: 60%;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             input{
+                 width: 98%;
+                outline: none;
+                border: none;
+            
+            
+        }
+        }
+       
+        button{
+            width: 60px;
+            height: 30px;
+            background: pink;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        
+    }
+}
