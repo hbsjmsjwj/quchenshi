@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './imgcontent.scss';
-import {Icon} from 'antd'
+import {Icon} from 'antd';
 import axios from 'axios';
 
 class Imgcontent extends Component{

@@ -6,6 +6,8 @@ import Main from '../pages/main';
 import Global from '../pages/global'; 
 import Life from '../pages/life'; 
 import Mask from '../pages/mask'; 
+import Login from '../pages/login';
+import Center from '../pages/center'
 
 import List from '../pages/list'
 
@@ -25,6 +27,8 @@ const App = ()=>(
 					<Route path="/life" exact component={Life}/>
 					<Route path='/list' exact component={List}/>
 					<Route path="/mask" exact component={Mask}/>	
+					<Route path="/login" exact component={Login}/>
+					<Route path="/center" exact component={Center}/>
 				</Switch>
 			</div>
 		</div>

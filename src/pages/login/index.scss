@@ -1,0 +1,28 @@
+.topLogBox{
+    width: 100%;
+    margin-top: -80px;
+    border-bottom: 1px solid #ccc;
+    div:nth-child(1){
+       width: 40%;
+        display: inline-block;
+          font-size: 18px;
+        color: black;
+    }
+    div:nth-child(2){
+      width: 60%;
+        display: inline-block;
+        font-size: 18px;
+        color: black;
+    }
+}
+
+
+ .film_login{ text-align: center;width: 100%;
+        .yzm{width: 4rem;}
+        .film_btn{ width: 30%; margin-left: 1.5rem;}
+        .film_btn1{margin-top: 20px;}
+        .des{font-size: 12px; color:#ccc;height: 40px;line-height: 40px;}
+    }
+    input:not([type='range']){
+        width: 88%;
+    }

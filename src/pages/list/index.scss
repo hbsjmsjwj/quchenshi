@@ -1,17 +1,111 @@
+//.list-con{margin-top: -84px;
+//  h1{
+//      width: 100%; height: 40px; line-height: 40px; font-size: 20px; font-weight: bold;
+//      border-bottom:1px solid #ccc;padding-left:0.5rem;
+//      .list-top-title{margin-left:2.5rem;}
+//  }
+//  .list-top-img{
+//      img{width:100%;}
+//  }
+//  ul{display: flex; flex-wrap: wrap;justify-content: space-around;
+//      li{
+//          width: 45%; height:auto; border:1px solid #ccc;
+//          img{width: 100%;}
+//      }
+//  }
+//
+//}
+
+
 .list-con{margin-top: -84px;
     h1{
         width: 100%; height: 40px; line-height: 40px; font-size: 20px; font-weight: bold;
         border-bottom:1px solid #ccc;padding-left:0.5rem;
         .list-top-title{margin-left:2.5rem;}
     }
+    .list_top{
+        display: flex; flex-wrap: nowrap; justify-content: space-around;
+        li{height:40px; line-height:40px;}
+        .active{border-bottom:3px solid #6ad6c3;}
+    }
     .list-top-img{
         img{width:100%;}
     }
-    ul{display: flex; flex-wrap: wrap;justify-content: space-around;
+    .list_item{display: flex; flex-wrap: wrap;justify-content: space-around;
         li{
             width: 45%; height:auto; border:1px solid #ccc;
             img{width: 100%;}
         }
     }
+    .loading{
+        text-align: center; color:dodgerblue; font-size: 20px;
+    }
+    .end{text-align: center; color:deeppink; font-size: 20px;}
 
 }
+
+
+
+
+.mansong{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    span{
+        background: pink;
+        color: white;
+        font-size: 12px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        height: 18px;
+        top:-20px;
+        
+    }
+}
+.sale_point{
+    height:0.4rem;
+    color: black;
+    font-size:12px; 
+    text-align: center;
+    margin-top: -12px;
+}
+.item_name{
+    height: 16px;
+    color: lightgray;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.car{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div{
+        width: 30%;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .car-car{
+        background: red;
+        color: white;
+        font-size: 18px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+}
+}
+
+.miaosha{
+    background: pink;
+    color: deeppink;
+    width: 55%;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+

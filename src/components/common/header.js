@@ -6,6 +6,7 @@ import {Row,Col,Icon} from 'antd';
 import './header.scss';
 
 import {withRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'; 
 
 
 
@@ -35,7 +36,7 @@ class Header extends Component{
 				<div className="qcs-header">
 					<div className="qcs-search">
 						<Row>
-							<Col span={4} ><Icon className="qcs-user" type="user"/></Col>
+							<Link to="/login"><Col span={4}  ><Icon className="qcs-user" type="user"/></Col></Link>
 							<Col span={16}><input className="sousuo" type="text" onClick={this.showDrawer}/></Col>
 							<Col span={4}><Icon className="qcs-shopping" type="shopping-cart"/></Col>
 							<Drawer
