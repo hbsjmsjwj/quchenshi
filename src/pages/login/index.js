@@ -141,11 +141,20 @@ class Login extends Component {
 		}
 	}
 	
+	
+  goHome1= ()=>{
+			this.props.history.push('/');
+		}
+
+	
 	render(){
+		
+		
+		
 		return(
 			<div >
 				<div className='topLogBox'>
-					<div><Icon type="left" /></div>
+					<div><Icon type="left"  onClick={this.goHome1}/></div>
 					<div>登录/注册</div>
 				</div>
 				<div className='film_login'>

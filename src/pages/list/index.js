@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import axios from 'axios';
-import {Icon} from 'antd'
+import {Icon} from 'antd';
+import {Link} from 'react-router-dom';
 
 import './index.scss';
 class List extends Component{
@@ -171,7 +172,9 @@ class List extends Component{
 				<ul className="list_item">
 					{
 						this.state.listArr.map((item,index)=><li key={index}>
-							<img src={item.over_image_url} alt={item.item_short_name}/>
+							<Link to={{pathname:'item',search:'?item_id='+item.item_id+'&app_price='+item.min_app_price+'&market_price='+item.min_market_price}}>
+								<img src={item.over_image_url} alt={item.item_short_name}/>
+							</Link>
 							
 							<div className="mansong">
 								<span>{item.promotions?item.promotions[0]:''}</span><span>{item.promotions?item.promotions[1]:''}</span>

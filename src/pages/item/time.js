@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import axios from 'axios'
-import './timer.scss'
+import './time.scss'
 
-class Timer extends Component{
+class Time extends Component{
 	constructor(){
 		super();
 		this.state={
@@ -19,12 +19,14 @@ class Timer extends Component{
 		axios.get("https://h5.watsons.com.cn/activity/specials/info?count=8&code=Home_flashSale__Top_Img&device_id=4155d580-0a4b-11e9-9edf-e355c56a73e5")
 		.then((resp)=>{
 			this.setState({
-				mytime:resp.data.data,
+				mytime:resp.data.data
 				
 			})
-			console.log(resp)
-		 		let start=this.state.mytime.now;
+				console.log(this.state.mytime)
+				
+				let start=this.state.mytime.now;
 				let end=this.state.mytime.specials_time_ranges[0].end;
+				console.log(end)
 				let sys_second=end-start;
 				setInterval(function time(mytime){
 		
@@ -45,6 +47,7 @@ class Timer extends Component{
 						}
 				
 				}.bind(this),1000)
+		 		
 				
 		})
 		
@@ -61,7 +64,6 @@ class Timer extends Component{
 		this.setState=(state,callback)=>{
 			return;
 		}
-	
 	}
 	
 				
@@ -71,14 +73,17 @@ class Timer extends Component{
 		
 		return (
 				
-				<div className="timer">
-					<div className='timeleft'>
-						<span>今日秒杀</span>
+				<div className="time1">
+					<div className='time1left'>
+						<button>秒杀</button>
+						<span>抢购中</span>
+					</div>
+					<div className='time1right'>
+						<span>剩余时间</span>
 						<span>{this.state.h}</span>:
 						<span>{this.state.min}</span>:
 						<span>{this.state.s}</span>
 					</div>
-					<div className='timeright'>更多好货{'>'}</div>
 					
 				</div>
 			
@@ -87,4 +92,4 @@ class Timer extends Component{
 	}
 }
 
-export default Timer;
+export default Time;

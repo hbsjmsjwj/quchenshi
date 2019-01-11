@@ -7,7 +7,9 @@ import Global from '../pages/global';
 import Life from '../pages/life'; 
 import Mask from '../pages/mask'; 
 import Login from '../pages/login';
-import Center from '../pages/center'
+import Center from '../pages/center';
+import Item from '../pages/item'
+import Cart from '../pages/cart';
 
 import List from '../pages/list'
 
@@ -29,6 +31,9 @@ const App = ()=>(
 					<Route path="/mask" exact component={Mask}/>	
 					<Route path="/login" exact component={Login}/>
 					<Route path="/center" exact component={Center}/>
+					<Route path="/item" exact component={Item}/>
+					<Route path="/cart" exact component={Cart}/>
+
 				</Switch>
 			</div>
 		</div>

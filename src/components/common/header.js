@@ -36,9 +36,9 @@ class Header extends Component{
 				<div className="qcs-header">
 					<div className="qcs-search">
 						<Row>
-							<Link to="/login"><Col span={4}  ><Icon className="qcs-user" type="user"/></Col></Link>
+							<Link to="/center"><Col span={4} >{localStorage['token']?<img className='userimg' src='http://image.watsons.com.cn/upload/hahy4f2323.png' alt=''/>:<Icon className="qcs-user" type="user"/>}</Col></Link>
 							<Col span={16}><input className="sousuo" type="text" onClick={this.showDrawer}/></Col>
-							<Col span={4}><Icon className="qcs-shopping" type="shopping-cart"/></Col>
+							<Link to='/cart'><Col span={4}><Icon className="qcs-shopping" type="shopping-cart"/></Col></Link>
 							<Drawer
 							  
 							  placement="right"

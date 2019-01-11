@@ -1,0 +1,50 @@
+.time1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+     background: pink;
+     margin-top: 0.5rem;
+    .time1left{
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+       
+        button{
+            height: 80%;
+            width: 45%;
+            border:none ;
+            border-radius: 15px;
+            background: white;
+            color: palevioletred;
+            font-size: 0.4rem;
+            
+        }
+        span{
+            color: white;
+            font-size: 0.4rem;
+        }
+    }
+    .time1right{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        box-sizing: border-box;
+        padding-right: 0.5rem;
+         color: white;
+        span:nth-child(1){
+            margin-right: 0.4rem;
+            color: white;
+            font-size:0.4rem ;
+        }
+        span:nth-child(2),span:nth-child(3),span:nth-child(4){
+           font-size: 0.5rem;
+            
+        }
+    }
+    
+}
